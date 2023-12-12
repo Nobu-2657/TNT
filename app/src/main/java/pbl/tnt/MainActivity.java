@@ -23,11 +23,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.button).setOnClickListener(this);
-
-        // 任意のURLにクライアントとしてアクセス
-        String url = "https://example.com";  // アクセスしたいURLを指定してください
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(intent);
     }
 
     @Override
